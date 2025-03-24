@@ -24,4 +24,8 @@ app.use('/api/appointments', appointmentRoutes);
 
 app.use(errorHandler);
 
+app.get("/", (req, res) => {
+    res.status(200).send("TEAM : NAARS");
+});
+
 export default app;
